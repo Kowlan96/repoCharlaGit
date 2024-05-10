@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="color-picker">
-        <div class="color-box" id="color-box"></div>
-        <div class="color-info" id="color-info">#FFFFFF</div>
-        <input type="color" id="color-input" onchange="updateColor(this.value)">
+    <div class="color-input">
+        <input type="text" id="colorInput" placeholder="Introduce un color en hexadecimal (#xxxxxx)">
+        <button onclick="mostrarColor()">Mostrar color</button>
       </div>
+      
+      <div id="colorDisplay"></div>
+      
+      <script src="script.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
